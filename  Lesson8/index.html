@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Playfair+Display&family=Square+Peg&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<title>My PHOTOS</title>
+</head>
+
+<body>
+	<header>
+		<h1>MyPhotos</h1>
+	</header>
+	<div class="container">
+		<div id="img_unit">
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$.getJSON('https://h2o-space.com/htmlbook/images.php', function(data){
+			alert('データを受信しました。')
+			for (var i=0;i<data.length;i++){
+				$('<div class="potho"></div>')
+				.append('<img src="">')
+			}
+		})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Playfair+Display&family=Square+Peg&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>My PHOTOS</title>
+</head>
+
+<body>
+	<header>
+		<h1>MyPhotos</h1>
+	</header>
+	<div class="container">
+		<div id="img_unit">
+		</div>
+		<div id="vue_unit">
+			{{ greeting }}
+			{{ message }}
+		</div>
+	</div>
+	<!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script>
+	var app = new Vue({
+		el: '#vue_unit',
+		data: {
+			greeting: 'Vue.jsで書き換えました。',
+			message: 'こんにちは',
+		}
+	});
+</script>
+
+</body>
+
+</html>
